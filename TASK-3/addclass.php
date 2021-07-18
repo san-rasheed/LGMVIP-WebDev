@@ -17,8 +17,6 @@ $sql="INSERT INTO `tblclass`(`cid`,`cname`) VALUES ('$cid','$cname');";
 $mysqli->query($sql);
 }
  ?>
-
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -72,18 +70,15 @@ $mysqli->query($sql);
                 <option value="Tenth">10</option>
   </select>
           </div>
-
           <div class="form-group">
             <input type="submit" value="Add" name="classubmit"class="btn float-right login_btn">
                 <button type="reset" class="btn  logr" name="button">Reset</button>
           </div>
         </form>
       </div>
-
     </div>
     </div>
     </div>
-
   </section>
   </body>
   </html>
