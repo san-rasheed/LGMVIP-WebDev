@@ -50,15 +50,10 @@ if ($mysqli -> connect_errno) {
   echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
 }
 $sid=$_POST['sid'];
-
-
 $sql="DELETE FROM `tblstudent` WHERE `sid`=$sid;";
 $mysqli->query($sql);
 }
-
  ?>
-
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -84,16 +79,13 @@ $mysqli->query($sql);
       <h1>Add Student</h1>
     <div class="d-flex justify-content-center h-100">
     <div class="card">
-
       <div class="card-body">
         <form action="addstudent.php" method="post">
           <div class="input-group form-group">
-
             <div class="input-group-prepend">
               <span class="input-group-text"><i class="fas fa-user"></i></span>
             </div>
             <input type="text" name="sid" class="form-control" placeholder="Enter Student id">
-
           </div>
           <div class="input-group form-group">
 
@@ -101,17 +93,13 @@ $mysqli->query($sql);
               <span class="input-group-text"><i class="fas fa-user"></i></span>
             </div>
             <input type="password" name="password" class="form-control" placeholder="Enter  password">
-
           </div>
           <div class="input-group form-group">
-
             <div class="input-group-prepend">
               <span class="input-group-text"><i class="fas fa-user"></i></span>
             </div>
             <input type="text" name="sname" class="form-control" placeholder="Enter Student Name">
-
           </div>
-
           <div class="input-group form-group">
             <div class="input-group-prepend">
               <span class="input-group-text"><i class="fas fa-school"></i></span>
@@ -129,15 +117,12 @@ $mysqli->query($sql);
                 <option value="Tenth">10</option>
   </select>
           </div>
-
-
           <div class="form-group">
             <input type="submit" value="Add" name="addstusubmit"class="btn float-right login_btn">
                 <button type="reset" class="btn  logr" name="button">Reset</button>
           </div>
         </form>
       </div>
-
     </div>
     </div>
     </div>
@@ -156,18 +141,13 @@ $mysqli->query($sql);
               <span class="input-group-text"><i class="fas fa-user"></i></span>
             </div>
             <input type="text" name="sid" class="form-control" placeholder="Enter Student id">
-
           </div>
-
           <div class="input-group form-group">
-
             <div class="input-group-prepend">
               <span class="input-group-text"><i class="fas fa-user"></i></span>
             </div>
             <input type="text" name="sname" class="form-control" placeholder="Enter Student Name">
-
           </div>
-
           <div class="input-group form-group">
             <div class="input-group-prepend">
               <span class="input-group-text"><i class="fas fa-school"></i></span>
@@ -185,15 +165,12 @@ $mysqli->query($sql);
                 <option value="Tenth">10</option>
   </select>
           </div>
-
-
           <div class="form-group">
             <input type="submit" value="Update" name="updatestusubmit"class="btn float-right login_btn">
                 <button type="reset" class="btn  logr" name="button">Reset</button>
           </div>
         </form>
       </div>
-
     </div>
     </div>
     </div>
@@ -202,16 +179,13 @@ $mysqli->query($sql);
       <h1>Delete Student Details</h1>
     <div class="d-flex justify-content-center h-100">
     <div class="card" style="height:25vh">
-
       <div class="card-body">
         <form action="addstudent.php" method="post">
           <div class="input-group form-group">
-
             <div class="input-group-prepend">
               <span class="input-group-text"><i class="fas fa-user"></i></span>
             </div>
             <input type="text" name="sid" class="form-control" placeholder="Enter Student id">
-
           </div>
           <div class="form-group">
             <input type="submit" value="Delete" name="delstusubmit"class="btn float-right login_btn">
@@ -219,7 +193,6 @@ $mysqli->query($sql);
           </div>
         </form>
       </div>
-
     </div>
     </div>
     </div>
